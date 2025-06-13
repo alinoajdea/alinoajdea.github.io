@@ -1,28 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #f7f7f7;}
-        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.07);}
-        h1 { color: #333; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Alin Oajdea – WordPress & Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Alin Oajdea, WordPress Developer, Shopify Expert, and Web Specialist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main: #3c82f6;
+      --background: #f6f8fa;
+      --card-bg: #fff;
+      --shadow: 0 8px 24px rgba(60, 130, 246, 0.06);
+      --radius: 18px;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      letter-spacing: 0.01em;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 780px;
+      margin: 48px auto;
+      padding: 32px;
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(24px);}
+      to { opacity: 1; transform: none;}
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .name {
+      font-size: 2.7rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--main);
+    }
+    .title {
+      font-size: 1.3rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .about {
+      margin-top: 18px;
+      font-size: 1.14rem;
+    }
+    .skills, .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--main);
+    }
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+    }
+    .skill-list li {
+      background: #e0e7ff;
+      padding: 6px 14px;
+      border-radius: 13px;
+      font-weight: 500;
+      color: #334155;
+    }
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .project-card {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(60,130,246,0.02);
+    }
+    .project-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 4px 0;
+      color: var(--main);
+    }
+    .project-desc {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+    }
+    .project-link {
+      color: var(--main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.96rem;
+      transition: color 0.2s;
+    }
+    .project-link:hover { color: #2563eb; }
+    .contact {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .contact a {
+      color: var(--main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.04rem;
+      transition: color 0.2s;
+    }
+    .contact a:hover { color: #2563eb; }
+    @media (max-width: 600px) {
+      .container { padding: 18px; }
+      .name { font-size: 2rem; }
+      .title { font-size: 1rem; }
+      .about { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Your Name</h1>
-        <p>Welcome to my portfolio! I’m a [Your Profession].</p>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <b>Project One</b> — Description of what you built.  
-                <a href="https://github.com/yourusername/projectone">View on GitHub</a>
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <div class="container">
+    <div class="header">
+      <span class="name">Alin Oajdea</span>
+      <span class="title">WordPress & Web Developer</span>
+      <p class="about">
+        With over 5 years of professional experience, I specialize in building, optimizing, and migrating large-scale websites on <b>WordPress</b> and <b>Shopify</b>. I excel in custom PHP solutions, seamless integrations, advanced SEO, and boosting site speed for projects with hundreds of thousands of users.
+      </p>
     </div>
+
+    <div class="skills">
+      <div class="section-title">Tech Skills</div>
+      <ul class="skill-list">
+        <li>WordPress</li>
+        <li>Shopify</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>REST API</li>
+        <li>SEO</li>
+        <li>Speed Optimization</li>
+        <li>Project Migration</li>
+        <li>Large Scale Sites</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="projects">
+      <div class="section-title">Highlighted Projects</div>
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="project-title">Large-scale WordPress Migration</div>
+          <div class="project-desc">
+            Led migration of a major e-commerce site from Magento to WordPress + WooCommerce, ensuring zero downtime and improved performance for 200k+ monthly users.
+          </div>
+          <!-- Example link. Replace with real project or remove -->
+          <a href="#" class="project-link" target="_blank">View Case Study</a>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Shopify to WordPress Custom Build</div>
+          <div class="project-desc">
+            Migrated and rebuilt a high-traffic Shopify store to a custom WordPress solution, including custom plugins, advanced SEO, and automated product sync.
+          </div>
+          <a href="#" class="project-link" target="_blank">View Case Study</a>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Site Speed Optimization (100/100)</div>
+          <div class="project-desc">
+            Optimized multiple sites to reach 100/100 on Google PageSpeed Insights, improving user experience and boosting organic rankings.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <span>📧</span>
+      <a href="mailto:alinoajdea@gmail.com">alinoajdea@gmail.com</a>
+      <span> | </span>
+      <a href="https://github.com/alinoajdea" target="_blank">GitHub</a>
+      <!-- Add more links like LinkedIn if you want -->
+    </div>
+  </div>
 </body>
 </html>
