@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alin Oajdea – WordPress & Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Alin Oajdea, WordPress Developer, Shopify Themes Dev, and Web Specialist."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --main: #3c82f6;
+        --background: #f6f8fa;
+        --card-bg: #fff;
+        --shadow: 0 8px 24px rgba(60, 130, 246, 0.06);
+        --radius: 18px;
+        --text: #1e293b;
+        --muted: #64748b;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: var(--background);
+        color: var(--text);
+        letter-spacing: 0.01em;
+        line-height: 1.7;
+      }
+      .container {
+        max-width: 780px;
+        margin: 48px auto;
+        padding: 32px;
+        background: var(--card-bg);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        animation: fadeIn 1s;
+      }
+      .col {
+        display: flex;
+        flex-flow: column;
+        gap: 8px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+      }
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .header-top img {
+        max-height: 200px;
+        max-width: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .header-top .col:first-of-type {
+        justify-content: center;
+      }
+      .name {
+        font-size: 2.7rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: var(--main);
+      }
+      .title {
+        font-size: 1.3rem;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .about {
+        margin-top: 18px;
+        font-size: 1.14rem;
+      }
+      .skills,
+      .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .section-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: var(--main);
+      }
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        list-style: none;
+        padding: 0;
+        font-size: 1rem;
+      }
+      .skill-list li {
+        background: #e0e7ff;
+        padding: 6px 14px;
+        border-radius: 13px;
+        font-weight: 500;
+        color: #334155;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+      }
+      .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .project-card {
+        background: #f1f5f9;
+        border-radius: 12px;
+        padding: 18px;
+        box-shadow: 0 2px 10px rgba(60, 130, 246, 0.02);
+      }
+      .project-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin: 0 0 4px 0;
+        color: var(--main);
+      }
+      .project-desc {
+        color: var(--muted);
+        font-size: 0.98rem;
+        margin-bottom: 6px;
+      }
+      .project-link {
+        color: var(--main);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.96rem;
+        transition: color 0.2s;
+      }
+      .project-link:hover {
+        color: #2563eb;
+      }
+      .contact {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-top: 4px;
+      }
+      .contact a {
+        color: var(--main);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.04rem;
+        transition: color 0.2s;
+      }
+      .contact a:hover {
+        color: #2563eb;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 18px;
+          margin: 0 auto;
+          border-radius: 0;
+        }
+        .col {
+          align-items: center;
+        }
+        .name {
+          font-size: 2rem;
+        }
+        .title {
+          font-size: 1rem;
+        }
+        .about {
+          font-size: 1rem;
+        }
+        .header-top {
+          flex-flow: column;
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-top">
+          <div class="col">
+            <span class="name">Alin Oajdea</span>
+            <span class="title">WordPress & Web Developer</span>
+          </div>
+          <div class="col">
+            <img
+              src="https://raw.githubusercontent.com/alinoajdea/alinoajdea.github.io/refs/heads/main/Alin.jpg"
+              alt="alin_img"
+            />
+          </div>
+        </div>
+        <p class="about">
+          With over 6 years of web development experience, I specialize in
+          building, optimizing, and migrating large-scale websites on
+          <b>WordPress</b>. I excel in custom solutions, seamless integrations,
+          technical SEO, and speed optimization. I also have experience with
+          Shopify, particularly in theme customization.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="section-title">Tech Skills</div>
+        <ul class="skill-list">
+          <li>WordPress</li>
+          <li>Shopify</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>REST API</li>
+          <li>SEO</li>
+          <li>GSC</li>
+          <li>Speed Optimization</li>
+          <li>Project Migration</li>
+          <li>Large Scale Sites</li>
+          <li>Git & GitHub</li>
+          <li>cPanel</li>
+        </ul>
+      </div>
+
+      <div class="projects">
+        <div class="section-title">Some of my public Projects</div>
+        <div class="projects-list">
+          <div class="project-card">
+            <div class="project-title">Vector Theme (Elementor)</div>
+            <div class="project-desc">
+              A custom WordPress theme built on the Hello Theme, featuring a
+              full header and footer builder, a custom theme options panel, and
+              a suite of original Elementor widgets for enhanced flexibility and
+              performance.
+            </div>
+            <a href="#" class="project-link" target="_blank">View Repo</a>
+          </div>
+          <div class="project-card">
+            <div class="project-title">Celia Theme (Shopify)</div>
+            <div class="project-desc">
+              A heavily customized Shopify theme based on Dawn, with numerous
+              custom sections, flexible options, and a clean, scalable design.
+              <br />
+              <strong>Preview:</strong>
+              <a href="https://celia-theme.myshopify.com/" target="_blank"
+                >celia-theme.myshopify.com</a
+              >
+              (Password: <code>demo</code>)
+            </div>
+            <a
+              href="https://github.com/alinoajdea/celia-theme"
+              class="project-link"
+              target="_blank"
+              >View Repo</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <span>📧</span>
+        <a href="mailto:alin.oajdea@gmail.com">alin.oajdea@gmail.com</a>
+        <span> | </span>
+        <a href="https://github.com/alinoajdea" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/alinoajdea" target="_blank"
+          >Linkedin</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
